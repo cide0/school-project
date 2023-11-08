@@ -1,0 +1,13 @@
+version: "3.5"
+services:
+  app:
+    container_name: jiel_angular
+    build: .
+    restart: always
+    volumes:
+      - "/code/node_modules"
+      - ./:/code
+    ports:
+      - 4200:4200
+    command:
+      ng serve --host 0.0.0.0

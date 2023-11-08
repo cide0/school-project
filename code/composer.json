@@ -1,0 +1,16 @@
+{
+    "name": "vendor/jiel",
+    "description": "desc",
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "require": {
+      "php": "^8.0",
+      "ext-pdo": "*",
+      "ext-curl": "*",
+      "ext-openssl": "*"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^9.5"
+    }
+}

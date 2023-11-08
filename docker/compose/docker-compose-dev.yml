@@ -1,0 +1,33 @@
+version: '3.5'
+services:
+  nginx:
+    container_name: jiel_nginx
+    image: jiel/nginx:dev
+    restart: unless-stopped
+    volumes:
+      - ./../../code/public:/var/www/html/public
+    ports:
+      - "80:80"
+
+  php:
+    container_name: jiel_php
+    image: jiel/php:dev
+    restart: unless-stopped
+    volumes:
+      - ./../../code:/var/www/html
+
+  mysql:
+    image: jiel/mysql:dev
+    build:
+      context: ../../.
+      dockerfile: docker/mysql/Dockerfile
+    container_name: jiel_mysql
+    restart: unless-stopped
+    volumes:
+      - ./../../database:/var/lib/mysql:rw
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_USER=
+      - MYSQL_PASSWORD=
+    ports:
+      - '3306:3306'

@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  php_cli:
+    container_name: jiel_php_cli
+    image: jiel/php_cli:dev
+    working_dir: /var/www/html
+    volumes:
+      - ./../../code:/var/www/html
+    environment:
+      - VHOST=localhost

@@ -21,11 +21,15 @@ build-dev:
 .PHONY: up
 up:
 	docker-compose -f docker/compose/docker-compose-dev.yml up -d
+	cd ./code/public/app && \
+	docker-compose up -d --build
 	docker ps
 
 .PHONY: down
 down:
 	docker-compose -f docker/compose/docker-compose-dev.yml down
+	cd ./code/public/app && \
+	docker-compose down
 	docker ps
 
 .PHONY: install
@@ -39,3 +43,8 @@ update:
 .PHONY: cleanup
 cleanup:
 	docker system prune -a -f --volumes
+
+.PHONY: init-angular
+init-angular:
+	cd ./code/public/app && \
+	docker-compose run app ng new angular-docker --directory .
