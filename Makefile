@@ -48,3 +48,11 @@ cleanup:
 init-angular:
 	cd ./code/public/app && \
 	docker-compose run app ng new angular-docker --directory .
+
+.PHONY: npm-install
+npm-install:
+	docker exec jiel_angular rm -rf package-lock.json && npm install
+	sudo docker cp jiel_angular:/code/node_modules ./code/public/app/
+
+.PHONY: run
+run: up npm-install

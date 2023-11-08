@@ -26,8 +26,8 @@ services:
     volumes:
       - ./../../database:/var/lib/mysql:rw
     environment:
-      - MYSQL_ROOT_PASSWORD=
-      - MYSQL_USER=
-      - MYSQL_PASSWORD=
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
     ports:
       - '3306:3306'

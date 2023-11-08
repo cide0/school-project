@@ -3,7 +3,8 @@ services:
   app:
     container_name: jiel_angular
     build: .
-    restart: always
+    image: jiel/angular:dev
+    restart: unless-stopped
     volumes:
       - "/code/node_modules"
       - ./:/code
