@@ -51,7 +51,8 @@ init-angular:
 
 .PHONY: npm-install
 npm-install:
-	docker exec jiel_angular rm -rf package-lock.json && npm install
+	docker exec jiel_angular rm -rf package-lock.json
+	docker exec jiel_angular npm install
 	sudo docker cp jiel_angular:/code/node_modules ./code/public/app/
 
 .PHONY: run
