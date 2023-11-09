@@ -1,1 +1,8 @@
 .idea
+code/public/app/.angular
+code/public/app/node_modules
+code/public/app/.vscode
+code/vendor
+database
+code/composer.lock
+code/public/app/package-lock.json
