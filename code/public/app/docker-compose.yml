@@ -10,5 +10,6 @@ services:
       - ./:/code
     ports:
       - 4200:4200
+      - 49153:49153
     command:
-      ng serve --host 0.0.0.0
+      ng serve --host 0.0.0.0 --poll 500
