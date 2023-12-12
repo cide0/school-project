@@ -1,0 +1,21 @@
+#sheep{
+  width: 25%;
+  height: 25%;
+  min-width: 150px;
+  min-height: auto;
+}
+
+#sheepInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+#textBox{
+  margin-top: 5em;
+}
