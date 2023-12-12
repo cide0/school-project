@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {NavbarComponent} from "./navbar/navbar.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {DashboardComponent} from "./homepage/dashboard/dashboard.component";
+import { VoteButtonComponent } from './homepage/vote-button/vote-button.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import {DashboardComponent} from "./homepage/dashboard/dashboard.component";
     NavbarComponent,
     HomepageComponent,
     DashboardComponent,
+    VoteButtonComponent,
 
   ],
   imports: [
