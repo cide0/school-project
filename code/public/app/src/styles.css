@@ -1,7 +1,27 @@
+@font-face {
+  font-family: "Poppins";
+  src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+:root{
+  --main-color: #ccc;
+  --secondary-color: #007f7d;
+  --secondary-color-hover: #009b99;
+  --secondary-color-hover-brighter: #00b5b3;
+}
+
+
 body{
   position: relative;
   display: block;
   border: none;
   margin: 0;
   outline: none;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-color);
+}
+
+.hidden{
+  display: none !important;
+  visibility: hidden;
 }

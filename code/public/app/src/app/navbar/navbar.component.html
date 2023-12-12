@@ -1,1 +1,52 @@
-<div class="navbar"></div>
+<div class="navbar">
+  <div class="navbar-header">
+    Animals
+  </div>
+  <div class="navbar-item">
+    <div class="navbar-item-header">
+      <img src="assets/icons/birb.png" alt="bird-icon">
+      <label>Birds</label>
+      <i class='bx bx-chevron-up'></i>
+    </div>
+    <div class="navbar-item-links hidden">
+      <a [routerLink]="['/animal/1']" class="navbar-link">Rotkehlchen</a>
+      <a [routerLink]="['/animal/2']" href="/animal/2" class="navbar-link">Spatz</a>
+      <a [routerLink]="['/animal/3']" href="/animal/3" class="navbar-link">Taube</a>
+    </div>
+  </div>
+  <div class="navbar-item">
+    <div class="navbar-item-header">
+      <img src="assets/icons/sheep.png" class="sheep-img" alt="sheep-icon">
+      <label>Mammals</label>
+      <i class='bx bx-chevron-up'></i>
+    </div>
+    <div class="navbar-item-links hidden">
+      <a [routerLink]="['/animal/4']" class="navbar-link">Jack</a>
+      <a [routerLink]="['/animal/5']" class="navbar-link">Lara</a>
+      <a [routerLink]="['/animal/6']" class="navbar-link">Ivana</a>
+    </div>
+  </div>
+  <div class="navbar-item">
+    <div class="navbar-item-header">
+      <img src="assets/icons/fish.png" alt="fish-icon">
+      <label>Fish</label>
+      <i class='bx bx-chevron-up'></i>
+    </div>
+    <div class="navbar-item-links hidden">
+      <a href="/animal/1" class="navbar-link">Carp</a>
+      <a href="/animal/2" class="navbar-link">Salmon</a>
+      <a href="/animal/3" class="navbar-link">Clownfish</a>
+    </div>
+  </div>
+  <div class="navbar-item">
+    <div class="navbar-item-live-cams">
+      <i class='bx bx-video'></i>
+      <a href="/live-cams" class="navbar-live-cam-link">Live cams</a>
+    </div>
+  </div>
+  <div class="navbar-footer">
+    Species found: %species_count%
+  </div>
+</div>
+
+<script src="./assets/navbar-toggle.js"></script>

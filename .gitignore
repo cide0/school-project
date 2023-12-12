@@ -6,3 +6,4 @@ code/vendor
 database
 code/composer.lock
 code/public/app/package-lock.json
+./Makefile
