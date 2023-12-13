@@ -61,8 +61,8 @@ run: up npm-install
 .PHONY: component
 component:
 	docker exec jiel_angular ng g c $(COMP)
-	sudo chown developer ./code/public/app/src/app/$(COMP)
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.css
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.html
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.spec.ts
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.ts
+#	sudo chown developer ./code/public/app/src/app/$(COMP)
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.css
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.html
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.spec.ts
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.ts
