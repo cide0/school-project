@@ -15,6 +15,16 @@ let navbar_toggle = function(){
       navbarItemLinks.classList.toggle("hidden");
     });
   }
+
+  let navbarLinks = document.getElementsByClassName("navbar-link");
+  for (let i = 0; i < navbarLinks.length; i++) {
+    navbarLinks[i].addEventListener('click', function (event) {
+      for (let j = 0; j < navbarLinks.length; j++) {
+        navbarLinks[j].classList.remove("current-page");
+      }
+      event.target.classList.add("current-page")
+    });
+  }
 }
 
 window.onload = navbar_toggle;

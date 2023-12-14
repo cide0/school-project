@@ -7,6 +7,8 @@ import {NavbarComponent} from "./navbar/navbar.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {DashboardComponent} from "./homepage/dashboard/dashboard.component";
 import { VoteButtonComponent } from './homepage/vote-button/vote-button.component';
+import { AnimalpageComponent } from './animalpage/animalpage.component';
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -15,11 +17,15 @@ import { VoteButtonComponent } from './homepage/vote-button/vote-button.componen
     HomepageComponent,
     DashboardComponent,
     VoteButtonComponent,
+    AnimalpageComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
   ],
   providers: [],
   bootstrap: [AppComponent]

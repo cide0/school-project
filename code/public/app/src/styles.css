@@ -4,7 +4,8 @@
 }
 
 :root{
-  --main-color: #ccc;
+  --main-color: #d5d5d5;
+  --content-bg-color: rgba(206, 206, 206, 0.6);
   --secondary-color: #007f7d;
   --highlight-color: #007876;
   --secondary-color-hover: #009b99;
@@ -19,7 +20,8 @@ body{
   margin: 0;
   outline: none;
   font-family: "Poppins", sans-serif;
-  background-color: var(--main-color);
+  background: rgb(0,127,125);
+  background: linear-gradient(0deg, rgba(0,127,125,0.4766281512605042) 0%, rgba(200,200,200,1) 68%);
 }
 
 .hidden{
