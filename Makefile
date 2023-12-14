@@ -53,7 +53,7 @@ init-angular:
 npm-install:
 	docker exec jiel_angular rm -rf package-lock.json
 	docker exec jiel_angular npm install
-	sudo docker cp jiel_angular:/code/node_modules ./code/public/app/ #for windows, open admin shell, remove this line in Makefile and  execute npm-install
+	sudo docker cp jiel_angular:/code/node_modules ./code/public/app/ #for windows, open admin shell and execute npm-install
 
 .PHONY: run
 run: up npm-install
@@ -61,8 +61,8 @@ run: up npm-install
 .PHONY: component
 component:
 	docker exec jiel_angular ng g c $(COMP)
-	sudo chown developer ./code/public/app/src/app/$(COMP)
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.css
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.html
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.spec.ts
-	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.ts
+#	sudo chown developer ./code/public/app/src/app/$(COMP)
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.css
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.html
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.spec.ts
+#	sudo chmod 777 ./code/public/app/src/app/$(COMP)/$(COMP).component.ts

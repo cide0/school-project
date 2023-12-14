@@ -3,7 +3,7 @@
 ### First of all, install make with the help of [this guide](https://earthly.dev/blog/makefiles-on-windows/).
 ### To start this project locally, execute the following commands in your terminal:
 1. `make install` to build the required images and do composer install
-2. `make run` to run the backend-containers, build and run the frontend-container and do npm install
+2. `make run` to run the backend-containers, build and run the frontend-container and do npm install (if npm-install fails on windows, see comment in Makefile)
 ### After these two steps you should be able to access: 
 1. [localhost port 4200](http://localhost:4200/) (frontend)
 2. [localhost port 80](http://localhost:80/) (backend)
