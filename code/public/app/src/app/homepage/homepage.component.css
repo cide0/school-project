@@ -6,8 +6,10 @@
   align-items: center;
 }
 
-app-dashboard{
-  border: 2px solid black;
-  width: 60%;
-  height: auto;
+span{
+  display: flex;
+  justify-content: center;
+
+  color: #0c5460;;
+  border-bottom: 3px solid #0c5460;
 }

@@ -1,4 +1,34 @@
-button{
-  background: #0c5460;
-  color: white;
+button {
+  font-size: medium;
+  display: inline-block;
+  position: relative;
+  margin-top: 1.5em;
+  background: var(--highlight-color);
+  border-radius: 12px;
+  width: 400px;
+  height: 50px;
+  transform: translateZ(0);
+  transition-duration: 0.4s;
+  overflow: hidden;
+  border: transparent;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--secondary-color-hover);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  border-radius: 12px;
+}
+
+button:hover:before {
+  transform: scaleX(1);
 }
