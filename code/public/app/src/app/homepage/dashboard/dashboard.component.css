@@ -1,6 +1,5 @@
 #sheep{
   width: 25%;
-  height: auto;
   border-radius: 12px;
   border: 2px solid var(--secondary-color);
 }
@@ -14,11 +13,6 @@
 h2{
   display: flex;
   justify-content: center;
-}
-
-#textBox{
-  margin-top: 2em;
-  margin-left: 3.5em;
 }
 
 #dashboard-container{
@@ -40,4 +34,3 @@ h2{
   display: flex;
   justify-content: center;
 }
-
