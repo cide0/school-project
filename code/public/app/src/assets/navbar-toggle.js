@@ -1,4 +1,4 @@
-let navbar_toggle = function(){
+let navbar_toggle = function() {
   let navbarItemHeaders = document.getElementsByClassName("navbar-item-header");
   for (let i = 0; i < navbarItemHeaders.length; i++) {
     navbarItemHeaders[i].addEventListener('click', function () {
@@ -25,6 +25,13 @@ let navbar_toggle = function(){
       event.target.classList.add("current-page")
     });
   }
-}
 
+  let navbar_header = document.getElementById('navbar-header');
+  navbar_header.addEventListener('click', () => {
+    for (let i = 0; i < navbarLinks.length; i++) {
+      navbarLinks[i].classList.remove("current-page");
+    }
+  });
+
+}
 window.onload = navbar_toggle;
