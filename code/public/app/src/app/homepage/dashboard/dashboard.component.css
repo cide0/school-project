@@ -33,7 +33,7 @@ h2{
   background-color: var(--content-bg-color);
   padding: 2rem;
   font-size: 1.1rem;
-  box-shadow: 4px 6px 14px #b9b9b9;
+  box-shadow: 4px 6px 14px #bebebe;
 }
 
 #dashboardWrapper{
