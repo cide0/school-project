@@ -9,9 +9,8 @@
 span{
   display: flex;
   justify-content: center;
-
-  color: #0c5460;
-  border-bottom: 3px solid #0c5460;
+  color: var(--header-color);
+  border-bottom: 3px solid var(--header-color);
   font-weight: bolder;
 }
 

@@ -6,6 +6,7 @@
 :root{
   --main-color: #d5d5d5;
   --content-bg-color: rgba(206, 206, 206, 0.6);
+  --header-color: #0c5460;
   --secondary-color: #007f7d;
   --highlight-color: #007876;
   --secondary-color-hover: #009b99;
@@ -27,4 +28,15 @@ body{
 .hidden{
   display: none !important;
   visibility: hidden;
+}
+
+.disabled{
+  pointer-events: none;
+  cursor: default;
+  background-color: grey !important;
+}
+
+.unclickable{
+  pointer-events: none;
+  cursor: default;
 }
