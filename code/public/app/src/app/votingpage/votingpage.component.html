@@ -1,0 +1,54 @@
+<div id="outerWrapper">
+  <div id="votingWrap">
+    <div class="voting-container">
+      <div class="voting-header">
+        Vote for a new sheep name
+      </div>
+      <div class="voting-body">
+        <div class="voting-options">
+          <label class="voting-option" (click)="optionClicked()">Lara
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <div class="voting-result hidden">
+            <div class="voting-bar">
+              <div id="voting-progress-1"></div>
+            </div>
+            <div class="voting-percent">
+              10%
+            </div>
+          </div>
+          <label class="voting-option" (click)="optionClicked()">Jack
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <div class="voting-result hidden">
+            <div class="voting-bar">
+              <div id="voting-progress-2"></div>
+            </div>
+            <div class="voting-percent">
+              75%
+            </div>
+          </div>
+          <label class="voting-option" (click)="optionClicked()">Ivana
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <div class="voting-result hidden">
+            <div class="voting-bar">
+              <div id="voting-progress-3"></div>
+            </div>
+            <div class="voting-percent">
+              15%
+            </div>
+          </div>
+        </div>
+        <img src="assets/sheep-image.jpg" alt="sheep-image">
+      </div>
+      <div class="voting-footer">
+        <button type="submit" class="voting-btn disabled" id="voteButton" (click)="hasVoted()">Vote</button>
+        <div id="success-message" class="success-message hidden">Thanks for your vote!</div>
+      </div>
+    </div>
+  </div>
+</div>
