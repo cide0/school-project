@@ -10,6 +10,7 @@ import { VoteButtonComponent } from './homepage/vote-button/vote-button.componen
 import { AnimalpageComponent } from './animalpage/animalpage.component';
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import { VotingpageComponent } from './votingpage/votingpage.component';
+import { LivecampageComponent } from './livecampage/livecampage.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { VotingpageComponent } from './votingpage/votingpage.component';
     VoteButtonComponent,
     AnimalpageComponent,
     VotingpageComponent,
+    LivecampageComponent,
 
   ],
   imports: [
