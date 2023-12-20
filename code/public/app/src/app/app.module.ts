@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import {NavbarComponent} from "./navbar/navbar.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {DashboardComponent} from "./homepage/dashboard/dashboard.component";
-import { VoteButtonComponent } from './vote-button/vote-button.component';
+import { VoteButtonComponent } from './homepage/vote-button/vote-button.component';
 import { AnimalpageComponent } from './animalpage/animalpage.component';
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import { VotingpageComponent } from './votingpage/votingpage.component';
 import { SheepPageComponent } from './sheep-page/sheep-page.component';
+import { LivecampageComponent } from './livecampage/livecampage.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SheepPageComponent } from './sheep-page/sheep-page.component';
     AnimalpageComponent,
     VotingpageComponent,
     SheepPageComponent,
+    LivecampageComponent,
 
   ],
   imports: [
