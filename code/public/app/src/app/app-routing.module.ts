@@ -4,6 +4,7 @@ import {AnimalpageComponent} from "./animalpage/animalpage.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import { LivecampageComponent } from './livecampage/livecampage.component';
 import {VotingpageComponent} from "./votingpage/votingpage.component";
+import {LoginpageComponent} from "./loginpage/loginpage.component";
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'live-cam',
     component: LivecampageComponent
+  },
+  {
+    path: 'admin-login',
+    component: LoginpageComponent
   }
 ];
 

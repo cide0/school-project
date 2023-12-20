@@ -11,6 +11,7 @@ import { AnimalpageComponent } from './animalpage/animalpage.component';
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import { VotingpageComponent } from './votingpage/votingpage.component';
 import { LivecampageComponent } from './livecampage/livecampage.component';
+import {LoginpageComponent} from "./loginpage/loginpage.component";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { LivecampageComponent } from './livecampage/livecampage.component';
     AnimalpageComponent,
     VotingpageComponent,
     LivecampageComponent,
+    LoginpageComponent
 
   ],
   imports: [
