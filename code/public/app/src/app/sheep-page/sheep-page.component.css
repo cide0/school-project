@@ -1,0 +1,123 @@
+#outerWrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+  height: 100%;
+}
+
+#sheepWrap{
+  min-height: 100vh;
+  max-height: 100%;
+  overflow-y: hidden;
+
+}
+
+.sheep-container{
+  margin-top: 1.6rem;
+  height: auto;
+  width: auto;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  background-color: var(--content-bg-color);
+  padding: 2rem;
+  font-size: 1.1rem;
+  box-shadow: 4px 6px 14px #bebebe;
+}
+
+hr
+{
+  background-color: #000;
+  width: 30rem;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  margin-top: 1rem;
+}
+
+.sheep-header{
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.sheep-summary{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.sheep-summary-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+
+span
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sheep-summary img{
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 2px solid var(--secondary-color);
+  display: block;
+}
+
+.sheep-footer a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all 0.4s ease;
+}
+
+.sheep-footer a:hover{
+  color: var(--secondary-color-hover);
+}
+
+.sheep-Description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50rem;
+  margin-bottom: 2rem;
+}
+.wool-Box{
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+  width: 500px;
+  height: 70px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.wool-Box-Hidden{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-radius: 12px;
+}
+
+
+
