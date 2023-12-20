@@ -1,15 +1,23 @@
 #outerWrapper{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+  height: 100%;
 }
 
 #sheepWrap{
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
+  overflow-y: hidden;
+
 }
 
 .sheep-container{
   margin-top: 1.6rem;
-  height: 80%;
+  height: auto;
+  width: auto;
+  max-width: 1080px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +26,6 @@
   padding: 2rem;
   font-size: 1.1rem;
   box-shadow: 4px 6px 14px #bebebe;
-  align-self: center;
 }
 
 hr
@@ -28,7 +35,7 @@ hr
   height: 2px;
   border: 0;
   outline: 0;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .sheep-header{
@@ -41,7 +48,6 @@ hr
   flex-direction: column;
   gap: 2.5rem;
   margin-top: 1.5rem;
-  width: 100%;
 }
 
 .sheep-summary-item{
@@ -50,12 +56,6 @@ hr
   justify-content: flex-start;
   margin-top: 1.5rem;
 }
-sheepList-container{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
 
 span
 {
@@ -63,14 +63,18 @@ span
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  text-align: justify;
+  width: 50rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .sheep-summary img{
   width: 200px;
+  max-width: 100%;
   height: auto;
-  margin-left: 5rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
   margin-bottom: 10px;
   border-radius: 12px;
   border: 2px solid var(--secondary-color);
@@ -86,4 +90,34 @@ span
 .sheep-footer a:hover{
   color: var(--secondary-color-hover);
 }
+
+.sheep-Description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50rem;
+  margin-bottom: 2rem;
+}
+.wool-Box{
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+  width: 500px;
+  height: 70px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.wool-Box-Hidden{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-radius: 12px;
+}
+
+
 
