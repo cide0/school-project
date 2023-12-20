@@ -4,6 +4,7 @@ import {AnimalpageComponent} from "./animalpage/animalpage.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import { LivecampageComponent } from './livecampage/livecampage.component';
 import {VotingpageComponent} from "./votingpage/votingpage.component";
+import {SheepPageComponent} from "./sheep-page/sheep-page.component";
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'animal/:id',
     component: AnimalpageComponent
+  },
+  {
+    path: 'sheep-page',
+    component: SheepPageComponent
   },
   {
     path: 'voting',

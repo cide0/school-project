@@ -10,6 +10,7 @@ import { VoteButtonComponent } from './homepage/vote-button/vote-button.componen
 import { AnimalpageComponent } from './animalpage/animalpage.component';
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import { VotingpageComponent } from './votingpage/votingpage.component';
+import { SheepPageComponent } from './sheep-page/sheep-page.component';
 import { LivecampageComponent } from './livecampage/livecampage.component';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { LivecampageComponent } from './livecampage/livecampage.component';
     VoteButtonComponent,
     AnimalpageComponent,
     VotingpageComponent,
+    SheepPageComponent,
     LivecampageComponent,
 
   ],
