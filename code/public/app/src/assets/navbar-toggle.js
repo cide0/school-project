@@ -33,5 +33,12 @@ let navbar_toggle = function() {
     }
   });
 
+  let navbar_live_cams = document.getElementById('navbar-item-live-cams');
+  navbar_live_cams.addEventListener('click', () => {
+    for (let i = 0; i < navbarLinks.length; i++) {
+      navbarLinks[i].classList.remove("current-page");
+    }
+  });
+
 }
 window.onload = navbar_toggle;
