@@ -5,6 +5,7 @@
 
 :root{
   --main-color: #d5d5d5;
+  --element-bg-color: #d1d1d1;
   --content-bg-color: rgba(206, 206, 206, 0.6);
   --header-color: #0c5460;
   --secondary-color: #007f7d;
@@ -21,8 +22,8 @@ body{
   margin: 0;
   outline: none;
   font-family: "Poppins", sans-serif;
-  background: rgb(0,127,125);
-  background: linear-gradient(0deg, rgba(0,127,125,0.7707457983193278) 3%, rgba(200,200,200,0.9332107843137255) 60%);
+  background: rgb(200,200,200);
+  background: linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(0,181,179,1) 61%, rgba(0,127,125,1) 100%);
 }
 
 .hidden{

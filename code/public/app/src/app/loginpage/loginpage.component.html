@@ -1,0 +1,21 @@
+<div id="outerWrapper">
+  <div id="loginWrap">
+    <div class="login-container">
+      <div class="header">Login</div>
+      <form action="/login" method="post">
+        <div class="login-components">
+          <hr>
+          <div class="login-input">
+            <div class="input-label"><i class='bx bxs-user-circle'></i><label for="name">Username</label></div>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="login-input">
+            <div class="input-label password-label"><i class='bx bxs-lock'></i><label for="password">Password</label></div>
+            <div class="password-container"><input type="password" id="password" name="password" autocomplete="on" required><i class='bx bxs-low-vision' id="togglePassword" (click)="togglePassword()"></i></div>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

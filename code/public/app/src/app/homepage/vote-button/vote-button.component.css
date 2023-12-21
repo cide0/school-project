@@ -21,7 +21,7 @@ button:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--secondary-color-hover-brighter);
+  background: var(--secondary-color-hover);
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition-duration: 0.4s;

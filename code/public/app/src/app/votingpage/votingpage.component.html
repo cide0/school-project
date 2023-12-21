@@ -6,7 +6,7 @@
       </div>
       <div class="voting-body">
         <div class="voting-options">
-          <label class="voting-option" (click)="optionClicked()">Lara
+          <label class="voting-option" (click)="optionClicked()">{{ voteOptions.optionOne }}
             <input type="radio" name="radio">
             <span class="checkmark"></span>
           </label>
@@ -18,7 +18,7 @@
               10%
             </div>
           </div>
-          <label class="voting-option" (click)="optionClicked()">Jack
+          <label class="voting-option" (click)="optionClicked()">{{ voteOptions.optionTwo }}
             <input type="radio" name="radio">
             <span class="checkmark"></span>
           </label>
@@ -30,7 +30,7 @@
               75%
             </div>
           </div>
-          <label class="voting-option" (click)="optionClicked()">Ivana
+          <label class="voting-option" (click)="optionClicked()">{{ voteOptions.optionThree }}
             <input type="radio" name="radio">
             <span class="checkmark"></span>
           </label>

@@ -5,7 +5,11 @@ import {Component} from '@angular/core';
   templateUrl: './votingpage.component.html',
   styleUrls: ['./votingpage.component.css']
 })
-export class VotingpageComponent {
+export class VotingpageComponent{
+  voteOptions: any = {};
+  constructor(){
+    this.setVoteOptions();
+  }
   optionClicked(){
     let voteButton = document.getElementById('voteButton')!;
     voteButton.classList.remove("disabled");
@@ -32,5 +36,14 @@ export class VotingpageComponent {
     //show success message
     let successMessage = document.getElementById('success-message')!;
     successMessage.classList.remove('hidden');
+  }
+
+  private async setVoteOptions(){
+    let response = await fetch('v1/animals/vote-options').then(function(response){
+      return response.json();
+    }).catch(function(error){
+      return '{"optionOne": "Ivana", "optionTwo": "Jack", "optionThree": "Lara"}';
+    });
+    this.voteOptions = JSON.parse(response);
   }
 }

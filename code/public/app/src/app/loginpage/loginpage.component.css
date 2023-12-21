@@ -1,0 +1,133 @@
+#outerWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+#loginWrap{
+  height: 100vh;
+}
+
+.login-container{
+  margin-top: 1.6rem;
+  border-radius: 12px;
+  background-color: var(--content-bg-color);
+  padding: 2rem;
+  width: 40rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px var(--element-bg-color) inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+input{
+  width: 12rem;
+  height: 2rem;
+  margin-right: 0;
+  color: #000;
+  background-color: var(--element-bg-color);
+  border: none;
+  border-radius: 10px;
+  padding: 2px 15px;
+  font-size: 16px;
+}
+
+input:focus{
+  background-color: var(--element-bg-color);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+label{
+  font-size: 19px;
+}
+
+hr{
+  border-color: #000;
+  width: 20rem;
+}
+
+.header{
+  font-size: 35px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: bold;
+}
+
+.login-components{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.login-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.input-label{
+  font-size: 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.input-label i{
+  font-size: 23px;
+}
+
+.password-label{
+  margin-left: 26px;
+}
+
+.password-container{
+  margin-left: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.password-container i{
+  font-size: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+.password-container i:hover {
+  color: var(--secondary-color-hover);
+}
+
+.login-btn{
+  width: 7rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  margin: .6rem 0;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.login-btn:hover{
+  background-color: var(--secondary-color-hover-brighter);
+}
