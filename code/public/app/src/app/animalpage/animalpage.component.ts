@@ -17,6 +17,17 @@ export class AnimalpageComponent implements OnInit, OnDestroy{
     this.id = this.route.snapshot.params['id'];
     this.sub = this.route.params.subscribe(params => {
       this.id = +params['id'];
+
+      let animalImage = <HTMLImageElement>document.getElementById("animal-image");
+      if (this.id===1){
+        animalImage.src = "./../../assets/red-robin.jpg";
+      }
+      else if (this.id===2){
+        animalImage.src = "./../../assets/raven.jpg";
+      }
+      else if (this.id===3){
+        animalImage.src = "./../../assets/Pigeon.jpg";
+      }
     });
   }
 
