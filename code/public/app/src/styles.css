@@ -14,7 +14,6 @@
   --secondary-color-hover-brighter: #00b5b3;
 }
 
-
 body{
   position: relative;
   display: block;
@@ -42,4 +41,31 @@ body{
 .unclickable{
   pointer-events: none;
   cursor: default;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 18px;
+  background: rgb(200,200,200);
+  background: linear-gradient(180deg, rgba(200,200,200,1) 0%, rgba(0,181,179,1) 61%, rgba(0,127,125,1) 100%);
+  background-repeat: no-repeat;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  margin-block: 10px;
+  background: #b3b3b3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color-hover);
+  border-radius: 20px;
+  background-clip: padding-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #008684;
 }
