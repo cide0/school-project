@@ -60,8 +60,9 @@
 
 .animal-description{
   margin-top: 1.8rem;
-  overflow-y: auto;
+  overflow-y:hidden;
   max-height: 15rem;
+  max-width: 40rem;
 }
 
 .animal-footer a{
@@ -73,5 +74,4 @@
 .animal-footer a:hover{
  color: var(--secondary-color-hover);
 }
-
 

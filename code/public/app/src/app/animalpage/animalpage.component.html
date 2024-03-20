@@ -2,45 +2,45 @@
 <div id="animalWrap">
   <div class="animal-container">
     <div class="animal-header">
-      %animal_name% {{id}}
+      {{ animalData.animalName }}
     </div>
     <hr>
     <div class="animal-summary">
       <div class="animal-summary-items">
         <div class="animal-summary-item">
           <label>Binomial name:</label>
-          <label>%binomial_name%</label>
+          <label>{{ animalData.binomialName }} </label>
         </div>
         <div class="animal-summary-item">
           <label>Class:</label>
-          <label>%class%</label>
+          <label>{{ animalData.class }} </label>
         </div>
         <div class="animal-summary-item">
           <label>Family:</label>
-          <label>%family%</label>
+          <label>{{ animalData.family }} </label>
         </div>
         <div class="animal-summary-item">
           <label>Size:</label>
-          <label>%size%</label>
+          <label>{{ animalData.size }} cm</label>
         </div>
         <div class="animal-summary-item">
           <label>Lifespan:</label>
-          <label>%lifespan%</label>
+          <label>{{ animalData.lifespan }} </label>
         </div>
         <div class="animal-summary-item">
           <label>Diet:</label>
-          <label>%diet%</label>
+          <label>{{ animalData.diet }} </label>
         </div>
         <div class="animal-summary-item">
           <label>Estimated park population:</label>
-          <label>%population%</label>
+          <label>{{ animalData.population }} </label>
         </div>
       </div>
-      <img id="animal-image" src="./../../assets/placeholder-image.png" alt="animal">
+      <img id="animal-image" src="{{ animalData.picture }}" alt="animal">
     </div>
     <div class="animal-content">
       <div class="animal-description">
-        %animal_description%
+        {{ animalData.animalDescription }}
       </div>
     </div>
     <hr>
