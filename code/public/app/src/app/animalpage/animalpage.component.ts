@@ -9,8 +9,20 @@ import {ActivatedRoute} from "@angular/router";
 export class AnimalpageComponent implements OnInit, OnDestroy{
   public id: number = 0;
   private sub: any;
+  public animalData: any = {};
   constructor(private route: ActivatedRoute){
+    this.fetchAnimalData();
+  }
 
+  private async fetchAnimalData()
+  {
+    let json = await fetch('http://localhost/animals/id').then(async function(response){
+      let json = await response.json();
+      return json;
+    }).catch(function(error){
+      alert(error);
+    });
+    this.animalData = json;
   }
 
   ngOnInit() {
@@ -19,10 +31,7 @@ export class AnimalpageComponent implements OnInit, OnDestroy{
       this.id = +params['id'];
 
       let animalImage = <HTMLImageElement>document.getElementById("animal-image");
-      if (this.id===1){
-        animalImage.src = "./../../assets/red-robin.jpg";
-      }
-      else if (this.id===2){
+      if (this.id===2){
         animalImage.src = "./../../assets/raven.jpg";
       }
       else if (this.id===3){
