@@ -6,7 +6,7 @@ This is a school project I worked on with a team of 3 other students as a part o
 
 The goal of our group was to create a web application that allows users to explore and learn about the biodiversity in a planned solar panel project near Mariehamn for the company [OX2](https://www.ox2.com/).
 
-There was also another main group of students that worked on a core API to provide all the other project teams apps with the required data.
+There was also another main group of students that worked on a core API to provide all the other project teams with the required data.
 
 Sadly however, the core API was never finished, and therefore we had to create our own placeholder data for the frontend to work with.
 
