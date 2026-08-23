@@ -33,7 +33,7 @@ down:
 	docker ps
 
 .PHONY: install
-install: build-dev
+install: build-dev up npm-install
 	$(CLI) run --rm --no-deps php_cli php -d memory_limit=-1 /usr/local/bin/composer install
 
 .PHONY: update
@@ -44,19 +44,11 @@ update:
 cleanup:
 	docker system prune -a -f --volumes
 
-.PHONY: init-angular
-init-angular:
-	cd ./code/public/app && \
-	docker-compose run app ng new angular-docker --directory .
-
 .PHONY: npm-install
 npm-install:
 	docker exec jiel_angular rm -rf package-lock.json
 	docker exec jiel_angular npm install
-	sudo docker cp jiel_angular:/code/node_modules ./code/public/app/ #for windows, open admin shell and execute npm-install
-
-.PHONY: run
-run: up npm-install
+	sudo docker cp jiel_angular:/code/node_modules ./code/public/app/
 
 .PHONY: component
 component:
