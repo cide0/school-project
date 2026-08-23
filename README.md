@@ -36,8 +36,8 @@ There are different make targets available to install and run this project:
 - `make build-dev` - Build the backend Docker images.
 - `make up` - Start the containers.
 - `make down` - Stop the containers.
-- `make install` - Run `make build-dev`, `make up`, `make npm-install` and install composer dependencies.
-- `make update` - Update composer dependencies.
+- `make install` - Run `make build-dev`, `make up`, `make npm-install` and install `composer` dependencies.
+- `make update` - Update `composer` dependencies.
 - `make cleanup` - Cleanup all containers, images and volumes.
-- `make npm-install` - Install npm dependencies for Angular.
-- `make component COMP={new_component_name}` - Add a new Angular component and create the relevant files with the given name.
+- `make npm-install` - Install `npm` dependencies for `Angular`.
+- `make component COMP={new_component_name}` - Add a new `Angular` component and create the relevant files with the given name.
