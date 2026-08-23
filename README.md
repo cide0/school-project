@@ -27,7 +27,7 @@ We also planned to add a login feature and a backend database so that users can 
 
 2. Open your browser and go to:
    - [Localhost on port 4200](http://localhost:4200/) for the frontend.
-   - [Localhost on port 80](http://localhost:80/)(for the backend.
+   - [Localhost on port 80](http://localhost:80/) for the backend.
 
 ## Make Targets
 
