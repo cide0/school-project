@@ -10,7 +10,7 @@ There was also another main group of students that worked on a core API to provi
 
 Sadly however, the core API was never finished, and therefore we had to create our own placeholder data for the frontend to work with.
 
-## Current Features:
+## Current Features
 - **Dashboard page:** Welcomes the user and provides a short introduction to the recently found animal species in the project area. Also includes a link to the voting page for new sheep names. More about that later.
 - **Navbar:** Provides links to the dashboard, live cams page, animal pages and includes a counter of the total number of species found in the project area.
 - **Live cams page:** Links to live streams of the sheep and bird cams in the project area.
